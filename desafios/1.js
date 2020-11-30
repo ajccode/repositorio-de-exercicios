@@ -44,7 +44,6 @@ class Executar {
    }
 }
 window.onload = function () {
-  
-  document.getElementById("ini").innerHTML = "<h1>adicione o metodo que quiser aqui!!!!";
+  document.getElementById("ini").innerHTML = "<h1>adicione o metodo que quiser aqui!!!!</h1>";
 }
 

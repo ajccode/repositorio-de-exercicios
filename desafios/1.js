@@ -18,7 +18,7 @@ class Executar {
        if (par.length > impar.length) return impar;
   }
   //Semelhante ao likes do facebook, mostra
-  //o numero de likes dentro de um array;
+  //o numero de likes dentro de um array
   likes (curtidas) {
       let verdadeiro = true;
       switch (verdadeiro) {
@@ -41,9 +41,38 @@ class Executar {
          return curtidas[0] + ", " + curtidas[1] + " and " + (curtidas.length - 2) + " others like this";
          break;
       }
-   }
+  }
+  
+  /** Considere uma matriz / lista de ovelhas 
+   * onde algumas ovelhas podem estar faltando 
+   * em seu lugar. Precisamos de uma função que 
+   * conte o número de ovelhas pre */
+   
+   countSheeps (arrayOfSheeps) {
+
+     let nummero_de_ovelhas = [3];
+     nummero_de_ovelhas[0] = 0;
+     nummero_de_ovelhas[1] = 0;
+     nummero_de_ovelhas[2] = 0;
+     nummero_de_ovelhas[3] = 0;
+     for (let contagem = 0; contagem <= (arrayOfSheeps.length - 1); contagem++) {
+       if (arrayOfSheeps[contagem] === undefined) {
+        nummero_de_ovelhas[0] += 1;
+      }
+      if (arrayOfSheeps[contagem] === null) {
+        nummero_de_ovelhas[1] += 1;
+      }
+      if (arrayOfSheeps[contagem] === false) {
+        nummero_de_ovelhas[2] += 1;
+      }
+      if (arrayOfSheeps[contagem] === true) {
+         nummero_de_ovelhas[3] += 1;
+      }
+    }
+    return " undefined: " +  nummero_de_ovelhas[0] + " null: " + nummero_de_ovelhas[1] + " false: " + nummero_de_ovelhas[2] + " true: " + nummero_de_ovelhas[3];;
+  }
 }
 window.onload = function () {
-  document.getElementById("ini").innerHTML = "<h1>adicione o metodo que quiser aqui!!!!</h1>";
-}
-
+ 
+  document.getElementById("ini").innerHTML = "<h1>Coloque o codigo aqui!11</h1>";
+};

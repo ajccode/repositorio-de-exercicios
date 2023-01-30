@@ -71,6 +71,34 @@ class Executar {
     }
     return " undefined: " +  nummero_de_ovelhas[0] + " null: " + nummero_de_ovelhas[1] + " false: " + nummero_de_ovelhas[2] + " true: " + nummero_de_ovelhas[3];;
   }
+  
+  
+  /** Soma de numeros em dois pontos **/
+  
+  getSum(a, b) {
+    let result = 0;
+    if (a < b) {
+      for (let k = a; k <= b; k++) {
+        result += k;
+      }
+      return "<div>" + a + "</div><div>" + b + "</div><div>" + result + "</div>";
+    }
+    else if (a > b) {
+      for (let k = a; k >= b; k--) {
+        result += k;
+      }
+      return "<div>" + a + "</div><div>" + b + "</div><div>" + result + "</div>";
+    } else {
+      return a;
+    }
+  }
+  
+  getSum2 (a, b) {
+    let min = Math.min(a, b),
+      max = Math.max(a, b);
+    return (max - min + 1) * (min + max) / 2;
+  }
+  
 }
 window.onload = function () {
  
